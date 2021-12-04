@@ -1,0 +1,51 @@
+@import "../base/mixins";
+@import "../base/variables";
+.manage {
+    background-color: $manage_bg;
+    height: 776px;
+    border-top: 1px solid #d8e3fe;
+    border-bottom: 1px solid #d8e3fe;
+    &__wrapper {
+        padding-top: 220px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        padding-left: 350px;
+    }
+    &__link {
+        @include link;
+        margin-top: -336px;
+        text-align: left;
+    }
+    &__header {
+        @include manage_header;
+        margin-top: 27px;
+        text-align: left;
+    }
+    &__text {
+        @include text;
+        margin-top: 27px;
+        text-align: left;
+        width: 413px;
+    }
+    &__button {
+        &_wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 260px;
+            margin-top: 47px;
+        }
+        &_filled {
+            @include button_filled;
+        }
+        &_outlined {
+            @include button_outlined;
+        }
+    }
+    &__image {
+        margin-top: -120px;
+        margin-left: -20px;
+    }
+}

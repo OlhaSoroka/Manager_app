@@ -1,0 +1,14 @@
+* {
+    font-family: "Open Sans", sans-serif;
+    font-family: "Quicksand", sans-serif;
+    font-family: "Roboto", sans-serif;
+}
+@import "./base/mixins";
+@import "./base/variables";
+@import "./blocks/header";
+@import "./blocks/promo";
+@import "./blocks/manage";
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
