@@ -19,9 +19,13 @@
         text-align: left;
     }
     &__header {
-        @include manage_header;
+        @include header;
         margin-top: 27px;
         text-align: left;
+        span {
+            font-weight: 500;
+        }
+        font-size: 36px;
     }
     &__text {
         @include text;
@@ -39,9 +43,22 @@
         }
         &_filled {
             @include button_filled;
+            transition: box-shadow 0.2s;
+            margin-right: 8px;
+            &:hover {
+                border-radius: 3px;
+                background: #5a8eff;
+                box-shadow: 10px 10px 20px #9cb3e6;
+            }
         }
         &_outlined {
             @include button_outlined;
+            transition: box-shadow 0.2s;
+            &:hover {
+                border-radius: 3px;
+                background: #f8fafd;
+                box-shadow: 10px 10px 20px #dddfe6;
+            }
         }
     }
     &__image {

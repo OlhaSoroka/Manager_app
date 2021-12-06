@@ -1,0 +1,104 @@
+@import "../base/mixins";
+@import "../base/variables";
+.resources {
+    background: #f5f8ff;
+    height: 865px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__subheader {
+        @include link;
+        padding-top: 104px;
+    }
+    &__header {
+        @include header;
+        margin-top: 20px;
+    }
+    &__content_wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 1154px;
+        margin: 0 auto 0 auto;
+    }
+    &__content {
+        background: #ffffff;
+        border: 1px solid #d8e3fe;
+        box-sizing: border-box;
+        box-shadow: 0px 15px 50px #eff4ff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 92px;
+    }
+    &__arrow {
+        margin-top: 100px;
+    }
+    &__image {
+        &_main {
+            img {
+                width: 267px;
+                height: 267px;
+                border-radius: 5px;
+                margin: 10px 0 0 10px;
+            }
+        }
+        &_absolute {
+            position: absolute;
+            left: 110px;
+            top: 110px;
+            cursor: pointer;
+        }
+        &_container {
+            display: flex;
+            padding: 64px 64px 64px 35px;
+            &_first {
+                position: relative;
+            }
+            &_second {
+                img {
+                    width: 126px;
+                    height: 126px;
+                    border-radius: 5px;
+                    margin-top: 12px;
+                    margin-left: 17px;
+                }
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    }
+    &__content_header {
+        @include header_second;
+    }
+    &__text {
+        width: 408px;
+        @include text;
+        text-align: left;
+        margin: 32px 41px 30px 0;
+    }
+    &__button {
+        @include button;
+        margin-right: 8px;
+        transition: all 0.2s;
+        margin-right: 20px;
+        &:hover {
+            border-radius: 2px;
+            background: #d2e1ff;
+            box-shadow: 9px 9px 18px #c3d1ed, -9px -9px 18px #e1f1ff;
+        }
+        &_wrapper {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+        &_noborder {
+            @include button_noborder;
+            transition: all 0.2s;
+        }
+    }
+    &__triple_dot {
+        margin-top: 100px;
+    }
+}

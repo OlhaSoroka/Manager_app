@@ -41,7 +41,7 @@
     }
     cursor: pointer;
 }
-@mixin promo__header {
+@mixin header {
     font-family: Quicksand;
     font-weight: 500;
     font-size: 48px;
@@ -80,6 +80,10 @@
     font-size: 13px;
     color: #ffffff;
     border: none;
+    &:focus {
+        outline: none;
+    }
+    cursor: pointer;
 }
 @mixin button_outlined {
     width: 130px;
@@ -93,11 +97,90 @@
     text-align: center;
     color: #adb4d2;
     background: #f5f8ff;
+    &:focus {
+        outline: none;
+    }
+    cursor: pointer;
 }
-@mixin manage_header {
+@mixin about_button {
+    width: 113px;
+    height: 25px;
+    background: #ffd7d7;
+    border-radius: 2px;
+    &:focus {
+        outline: none;
+    }
+    cursor: pointer;
+    border: none;
+    @include button_text;
+}
+@mixin number_text {
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 83px;
+    text-align: right;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+}
+@mixin statistics_text {
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: right;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+}
+@mixin header_second {
     font-family: Quicksand;
     font-weight: normal;
     font-size: 36px;
     line-height: 45px;
     color: #3d4f9f;
+}
+@mixin button_noborder {
+    width: 211px;
+    height: 43px;
+    @include button_text;
+    color: #a6b6da;
+    background: #fff;
+    border: none;
+    &:focus {
+        outline: none;
+    }
+    cursor: pointer;
+    &:hover {
+        background: #f5f8ff;
+        box-shadow: 9px 9px 18px #ebebeb, -9px -9px 18px #f1f4f6;
+    }
+}
+@mixin help_text {
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    color: #8e96b7;
+}
+@mixin help_button {
+    width: 195px;
+    height: 43px;
+    background: #e8ecf4;
+    border-radius: 2px;
+    font-family: Quicksand;
+    font-weight: 500;
+    font-size: 13px;
+    text-align: center;
+    color: #7382a3;
+    border: none;
+    &:focus {
+        outline: none;
+    }
+    cursor: pointer;
 }

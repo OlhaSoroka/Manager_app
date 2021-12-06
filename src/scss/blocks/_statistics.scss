@@ -1,0 +1,53 @@
+@import "../base/mixins";
+@import "../base/variables";
+.statistics {
+    &__wrapper {
+        margin: 0 auto 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__customer_wrapper {
+        flex-basis: 50%;
+        height: 342px;
+        background: linear-gradient(229.32deg, #6888ff 12.77%, #5e80ff 73.11%);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        img {
+            margin: 66px 90px 0 0;
+        }
+    }
+    &__user_wrapper {
+        flex-basis: 50%;
+        height: 342px;
+        background: linear-gradient(101.48deg, #e9efff 41.56%, #e0e9ff 81.53%);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        img {
+            margin: 66px 0 0 90px;
+        }
+    }
+    &__number_left {
+        margin: 24px 90px 0 0;
+        @include number_text;
+    }
+    &__number_right {
+        margin: 24px 0 0 90px;
+        @include number_text;
+        color: #5e80ff;
+    }
+    &__text_left {
+        width: 260px;
+        margin: 8px 90px 0 0;
+        @include statistics_text;
+    }
+    &__text_right {
+        width: 260px;
+        margin: 8px 0 0 90px;
+        @include statistics_text;
+        color: #5e80ff;
+        text-align: left;
+    }
+}

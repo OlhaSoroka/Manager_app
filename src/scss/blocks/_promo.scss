@@ -21,7 +21,7 @@
         margin-top: -520px;
     }
     &__header {
-        @include promo__header;
+        @include header;
         margin-top: 20px;
         span {
             font-weight: 500;

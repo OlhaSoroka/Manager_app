@@ -1,0 +1,56 @@
+@import "../base/mixins";
+@import "../base/variables";
+.help {
+    height: 864px;
+    background: #ffffff;
+    &__subheader {
+        @include link;
+        margin-top: 176px;
+    }
+    &__header {
+        @include header;
+        font-size: 24px;
+        line-height: 30px;
+        margin-top: 20px;
+    }
+    &__questions {
+        @include help_text;
+        img {
+            margin: 24px;
+        }
+        &_container {
+            &:nth-child(3) {
+                & > div:nth-child(1) {
+                    color: #495274;
+                    font-weight: bold;
+                    font-size: 15px;
+                }
+            }
+        }
+        &_wrapper {
+            margin-top: 68px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        &_divider {
+            width: 743px;
+            height: 1px;
+            background: #d8e3fe;
+            margin: 15px 0 15px 0;
+        }
+        &_button_container {
+            display: flex;
+            justify-content: space-between;
+            button {
+                @include help_button;
+            }
+        }
+        &_text_container {
+            width: 392px;
+            @include text;
+            text-align: left;
+            margin-left: 90px;
+        }
+    }
+}
