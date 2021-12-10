@@ -1,2 +1,40 @@
 @import "../base/mixins";
 @import "../base/variables";
+.sign {
+    background: #fcfdff;
+    border-bottom: 1px solid #d8e3fe;
+    height: 332px;
+    &__wrapper {
+        margin: 118px 0 0 130px;
+
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    &__header {
+        @include header;
+        font-size: 18px;
+        text-align: left;
+        font-weight: bold;
+    }
+    &__text {
+        width: 330px;
+        @include text;
+        font-size: 14px;
+        text-align: left;
+    }
+    &__button_grey {
+        @include sign_button_grey;
+        margin-left: 80px;
+        text-align: left;
+        padding-left: 30px;
+    }
+    &__button_blue {
+        @include sign_button_blue;
+        margin-left: 14px;
+        &:hover {
+            background: linear-gradient(145deg, #5274f1, #4561cb);
+            box-shadow: 14px 14px 28px #4c6cdf42, -14px -14px 28px #4e6ce34b;
+        }
+    }
+}
