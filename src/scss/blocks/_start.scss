@@ -1,0 +1,74 @@
+@import "../base/mixins";
+@import "../base/variables";
+.start {
+    background: linear-gradient(229.32deg, #6888ff 12.77%, #5e80ff 73.11%);
+    height: 447px;
+    position: relative;
+    padding-top: 50px;
+    & > .container {
+        background: url("../../icon/start_clouds.png") center (center/cover) no-repeat;
+        margin: 0 auto;
+        max-width: unset;
+        width: 1300px;
+        height: 330px;
+    }
+    &__wrapper {
+        padding-top: 90px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__subheader {
+        @include link;
+        color: #ffffff;
+    }
+    &__header {
+        font-family: Quicksand;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 48px;
+        line-height: 60px;
+        color: #ffffff;
+        span {
+            font-weight: 500;
+        }
+    }
+    &__text {
+        @include text;
+        color: #ffffff;
+        margin-top: 28px;
+        width: 712px;
+    }
+    &__button {
+        &_wrapper {
+            padding-top: 38px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+        &_filled {
+            @include button;
+            background: #ffffff;
+            color: #565f82;
+            width: 130px;
+            height: 43px;
+            margin-right: 10px;
+            &:hover {
+                background: #ffffff;
+                box-shadow: 5px 5px 26px #fcfcfc3a, -5px -5px 26px #ffffff42;
+            }
+            transition: all 0.2s;
+        }
+        &_outlined {
+            @include button_start_outlined;
+        }
+    }
+    &__image {
+        img {
+            z-index: -1;
+            width: 1700px;
+            top: -30px;
+            position: absolute;
+        }
+    }
+}

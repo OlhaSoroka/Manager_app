@@ -184,3 +184,26 @@
     }
     cursor: pointer;
 }
+@mixin button_start_outlined {
+    width: 155px;
+    height: 43px;
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    text-align: center;
+    color: #c7d3ff;
+    border-radius: 2px;
+    border: 1px solid #a0b4ff;
+    background: linear-gradient(229.32deg, #6888ff 12.77%, #5e80ff 73.11%);
+    cursor: pointer;
+    &:focus {
+        outline: none;
+    }
+    &:hover {
+        background: linear-gradient(229.32deg, #6888ff 12.77%, #5e80ff 73.11%);
+        box-shadow: -4px -4px 8px #3f539c, 4px 4px 8px #91bdff73;
+    }
+    transition: all 0.2s;
+}
